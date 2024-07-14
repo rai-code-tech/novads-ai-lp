@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Kontora;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  margin-inline: unset !important;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.deep_purple_A200_deep_purple_A200_border {
+  border-image: linear-gradient(90deg, #7f35ff, #8035ff00, #7f35ff) 1;
+}
+
+.deep_purple_900_51_deep_purple_900_28_border {
+  border-image: linear-gradient(180deg, #2c007751, #2c007719, #2c007728) 1;
+}
