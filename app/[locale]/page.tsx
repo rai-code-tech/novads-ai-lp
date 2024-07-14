@@ -118,24 +118,20 @@ export default function Page() {
             className="h-[44px] w-[18%] object-cover"
           />
           <Text as="p" className="mt-3 w-[24%] text-center leading-7 md:w-full">
-            <>
-              Discover the Right Fit for Your Budget
-              <br />
-              with Novads.AI Pricing
-            </>
+            <>{t("discover_pricing")}</>
           </Text>
           <div className="relative mt-3 h-[70px] w-[34%] content-center md:h-auto">
             <Input
               shape="round"
               name="Email Field"
-              placeholder={`Subscribe`}
+              placeholder={t("subscribe")}
               className="mx-auto"
             />
             <Button
               shape="round"
               className="absolute bottom-0 right-[10.00px] top-0 my-auto min-w-[126px] font-semibold"
             >
-              Subscribe
+              {t("subscribe")}
             </Button>
           </div>
           <div className="mt-12 flex w-[44%] flex-wrap justify-between gap-5 md:w-full">

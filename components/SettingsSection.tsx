@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import { CheckBox, Text, Heading, Img } from ".";
 import React from "react";
 
 export default function SettingsSection() {
+  const t = useTranslations();
+
   return (
     <>
       {/* settings section */}
@@ -52,18 +55,18 @@ export default function SettingsSection() {
                         className="relative mt-[-74px] bg-gradient2 bg-clip-text !text-transparent"
                       >
                         <span className="bg-gradient2 bg-clip-text text-transparent">
-                          Imagine,&nbsp;
+                          {t("imagine")},
                         </span>
-                        <span className="text-white-a700">write, admire.</span>
+                        <span className="text-white-a700">
+                          {t("write-admire")}
+                        </span>
                       </Heading>
                     </div>
                     <Text
                       as="p"
                       className="mr-2 self-stretch text-center leading-7 md:mr-0"
                     >
-                      Discover a Seamless Experience with Novads.AI - Boosting
-                      Productivity, Efficiency, and Collaboration in Every
-                      Click.
+                      {t("promo")}
                     </Text>
                   </div>
                   <Img
@@ -216,35 +219,30 @@ export default function SettingsSection() {
                       <div className="mt-24 h-[134px] w-[40%] rounded-[20px] bg-white-a700_19" />
                       <div className="mr-3.5 flex flex-col items-start self-stretch md:mr-0">
                         <Heading size="headinglg" as="h3">
-                          Optimize Performance
+                          {t("promo-title")}
                         </Heading>
                         <Text
                           as="p"
                           className="mt-1.5 w-[84%] leading-7 md:w-full"
                         >
-                          <>
-                            Take your ads performance to the next level with
-                            conversion
-                            <br />
-                            optimized visuals
-                          </>
+                          {t("opti-desc")}
                         </Text>
                         <div className="mt-3 flex flex-col items-start gap-4 self-stretch">
                           <CheckBox
                             name="Checkmark Item"
-                            label="Trained data on most viral content"
+                            label={t("opti-first")}
                             id="CheckmarkItem"
                             className="gap-1.5 text-[18px] font-bold text-white-a700"
                           />
                           <CheckBox
                             name="Fine Tuning Checkbox"
-                            label="Fine tuning over time"
+                            label={t("opti-sec")}
                             id="FineTuningCheckbox"
                             className="gap-1.5 text-[18px] font-bold text-white-a700"
                           />
                           <CheckBox
                             name="Competitor Checkbox"
-                            label="Be one step ahead of your competitoes"
+                            label={t("opti-ter")}
                             id="CompetitorCheckbox"
                             className="gap-1.5 text-[18px] font-bold text-white-a700"
                           />
@@ -276,28 +274,27 @@ export default function SettingsSection() {
             <div className="relative mt-[-270px] flex w-[48%] justify-center rounded-[30px] border border-solid border-white-a700_4c bg-white-a700_19 px-8 py-[34px] md:w-full sm:p-5">
               <div className="mt-[260px] flex w-full flex-col items-start">
                 <Heading size="headinglg" as="h3">
-                  AI-Powered Insights
+                  {t("promo-title-sec")}
                 </Heading>
                 <Text as="p" className="mt-1 w-[84%] leading-7 md:w-full">
-                  Our AI analyzes your brand and remembers it to produce a
-                  tailor-made experience
+                  {t("info-desc")}
                 </Text>
                 <div className="mt-3 flex flex-col items-start gap-4 self-stretch">
                   <CheckBox
                     name="Data Checkbox"
-                    label="Data-Driven Generation"
+                    label={t("info-first")}
                     id="DataCheckbox"
                     className="gap-1.5 text-[18px] font-bold text-white-a700"
                   />
                   <CheckBox
                     name="Brand Checkbox"
-                    label="In-depth Brand Understanding"
+                    label={t("info-sec")}
                     id="BrandCheckbox"
                     className="gap-1.5 text-[18px] font-bold text-white-a700"
                   />
                   <CheckBox
                     name="Experience Checkbox"
-                    label="Personalized Experience"
+                    label={t("info-ter")}
                     id="ExperienceCheckbox"
                     className="gap-1.5 text-[18px] font-bold text-white-a700"
                   />

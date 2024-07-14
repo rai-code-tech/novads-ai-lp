@@ -10,8 +10,11 @@ import {
   Accordion,
   AccordionItem,
 } from "react-accessible-accordion";
+import { useTranslations } from "next-intl";
 
 export default function FAQSection() {
+  const t = useTranslations();
+
   return (
     <>
       {/* f a q section */}
@@ -23,11 +26,10 @@ export default function FAQSection() {
               as="h2"
               className="bg-gradient2 bg-clip-text !text-transparent"
             >
-              Frequently Asked Questions
+              {t("faq_heading")}
             </Heading>
             <Text as="p" className="self-stretch text-center leading-7">
-              Your Questions, Answered. Explore our comprehensive FAQ section to
-              gain insights into the functionality, customization, and support.
+              {t("faq_description")}
             </Text>
           </div>
           <Accordion preExpanded={[0]} className="flex w-[90%] flex-col gap-14">
@@ -45,8 +47,7 @@ export default function FAQSection() {
                                 as="h3"
                                 className="bg-gradient2 bg-clip-text !text-transparent"
                               >
-                                What is Novads.AI and how can it benefit my
-                                business?
+                                {t("faq_question_1")}
                               </Heading>
                               {props?.expanded ? (
                                 <Img
@@ -74,12 +75,7 @@ export default function FAQSection() {
                   <AccordionItemPanel>
                     <div className="flex justify-center">
                       <Text as="p" className="w-[92%] leading-7">
-                        Novads.Al is an advanced Al-driven platform designed to
-                        streamline and enhance the process of creating image ads
-                        for your business. By leveraging cutting-edge artificial
-                        intelligence, Novads.Al automatically generates
-                        high-quality, visually appealing ads tailored to your
-                        brand&#39;s unique identity and target audience.
+                        {t("faq_answer_1")}
                       </Text>
                     </div>
                   </AccordionItemPanel>

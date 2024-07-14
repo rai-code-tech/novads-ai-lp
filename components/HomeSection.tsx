@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import { Img, Button, Text, Heading } from ".";
 import React from "react";
 
 export default function HomeSection() {
+  const t = useTranslations();
   return (
     <>
       {/* home section */}
@@ -24,22 +26,21 @@ export default function HomeSection() {
                   className="absolute bottom-0 left-[8.00px] top-0 my-auto h-max w-[80%] leading-[90px]"
                 >
                   <>
-                    Discover the first
+                    {t("title1")}
                     <br />
-                    AI-powered ad
+                    {t("title2")}
                     <br />
-                    creation tool
+                    {t("title3")}
                   </>
                 </Heading>
               </div>
             </div>
             <Text as="p" className="ml-2 w-[86%] leading-7 md:ml-0 md:w-full">
-              Turn your words into the most beautiful ads. With Novads.ai,
-              generate your next creatives from your thoughts.
+              {t("home-p")}
             </Text>
             <div className="ml-2 mt-6 flex items-start justify-between gap-5 md:ml-0">
               <Button shape="round" className="min-w-[160px] font-semibold">
-                Get Started
+                {t("start")}
               </Button>
               <Img
                 src="img_vector.svg"

@@ -1,39 +1,18 @@
 import { Text, Img, Button, Heading } from "./..";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 interface Props {
   className?: string;
-  basic?: React.ReactNode;
-  idealforthose?: React.ReactNode;
-  price?: React.ReactNode;
-  pricePeriod?: React.ReactNode;
-  bookButtonText?: string;
-  whatYouWillGetText?: React.ReactNode;
-  creditsPerMonthText?: React.ReactNode;
-  textGenerationText?: React.ReactNode;
-  adsPlatformIntegrationText?: React.ReactNode;
-  supportText?: React.ReactNode;
-  exclusiveTutorialsText?: React.ReactNode;
 }
 
-export default function PricingDetails({
-  basic = "Basic",
-  idealforthose = "Ideal for those with minor to moderate use",
-  price = "$49",
-  pricePeriod = "/ per month",
-  bookButtonText = "Book Your Ticket",
-  whatYouWillGetText = "What you will get",
-  creditsPerMonthText = "25 credits/month",
-  textGenerationText = "Text generation",
-  adsPlatformIntegrationText = "Ads platform integration",
-  supportText = "24/7 Email & Chat Support",
-  exclusiveTutorialsText = "Exclusive tutorials",
-  ...props
-}: Props) {
+export default function PricingDetails({ className, ...props }: Props) {
+  const t = useTranslations();
+
   return (
     <div
       {...props}
-      className={`${props.className} flex flex-col items-center w-[48%] gap-9 bg-gradient rounded-[32px]`}
+      className={`${className} flex flex-col items-center w-[48%] gap-9 bg-gradient rounded-[32px]`}
     >
       <div className="mx-7 h-[4px] w-[74%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
       <div className="flex w-[78%] flex-col gap-[22px]">
@@ -43,29 +22,36 @@ export default function PricingDetails({
           </div>
           <div className="flex flex-col items-start justify-center gap-1.5 self-stretch">
             <Heading size="textmd" as="p">
-              {basic}
+              {t("basic")}
             </Heading>
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {idealforthose}
+              {t("ideal_for_those")}
             </Text>
           </div>
         </div>
         <div className="flex flex-wrap items-center">
           <Heading size="headingxl" as="h1" className="tracking-[-0.96px]">
-            {price}
+            {t("price")}
           </Heading>
-          <Text size="textxs" as="p" className="mb-2 self-end !text-white-a700_cc">
-            {pricePeriod}
+          <Text
+            size="textxs"
+            as="p"
+            className="mb-2 self-end !text-white-a700_cc"
+          >
+            {t("price_period")}
           </Text>
         </div>
-        <Button shape="round" className="self-stretch !rounded-[28px] font-semibold">
-          {bookButtonText}
+        <Button
+          shape="round"
+          className="self-stretch !rounded-[28px] font-semibold"
+        >
+          {t("book_your_ticket")}
         </Button>
       </div>
       <div className="h-px w-[78%] bg-white-a700_28" />
       <div className="mb-16 flex w-[78%] flex-col items-start justify-center gap-[18px]">
         <Text as="p" className="!font-medium tracking-[-0.36px]">
-          {whatYouWillGetText}
+          {t("what_you_will_get")}
         </Text>
         <div className="flex flex-col gap-4 self-stretch">
           <div className="flex gap-2">
@@ -77,7 +63,7 @@ export default function PricingDetails({
               className="h-[16px] w-[16px]"
             />
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {creditsPerMonthText}
+              {t("credits_per_month")}
             </Text>
           </div>
           <div className="flex gap-2">
@@ -89,7 +75,7 @@ export default function PricingDetails({
               className="h-[16px] w-[16px]"
             />
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {textGenerationText}
+              {t("text_generation")}
             </Text>
           </div>
           <div className="flex gap-2">
@@ -101,7 +87,7 @@ export default function PricingDetails({
               className="h-[16px] w-[16px]"
             />
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {adsPlatformIntegrationText}
+              {t("ads_platform_integration")}
             </Text>
           </div>
           <div className="flex gap-2">
@@ -113,7 +99,7 @@ export default function PricingDetails({
               className="h-[16px] w-[16px]"
             />
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {supportText}
+              {t("support")}
             </Text>
           </div>
           <div className="flex gap-2">
@@ -125,7 +111,7 @@ export default function PricingDetails({
               className="h-[16px] w-[16px]"
             />
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {exclusiveTutorialsText}
+              {t("exclusive_tutorials")}
             </Text>
           </div>
         </div>

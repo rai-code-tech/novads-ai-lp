@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Button, Text, Img } from "./..";
 import Link from "next/link";
 import React from "react";
@@ -7,6 +8,8 @@ interface Props {
 }
 
 export default function Header({ ...props }: Props) {
+  const t = useTranslations();
+
   return (
     <header
       {...props}
@@ -42,7 +45,7 @@ export default function Header({ ...props }: Props) {
         </li>
       </ul>
       <Button shape="round" className="min-w-[160px] self-center font-semibold">
-        Get Started
+        {t("start")}
       </Button>
     </header>
   );

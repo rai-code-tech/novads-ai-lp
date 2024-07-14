@@ -1,8 +1,11 @@
+import { useTranslations } from "next-intl";
 import { Text, Heading, Button } from ".";
 import PricingDetails from "./PricingDetails";
 import React from "react";
 
 export default function HomePresaleSection() {
+  const t = useTranslations();
+
   return (
     <>
       {/* home presale section */}
@@ -15,7 +18,7 @@ export default function HomePresaleSection() {
                 shape="square"
                 className="min-w-[112px] font-bold"
               >
-                Presale
+                {t("presale")}
               </Button>
               <Heading
                 size="heading2xl"
@@ -23,13 +26,13 @@ export default function HomePresaleSection() {
                 className="mt-7 w-full bg-gradient2 bg-clip-text leading-[65px] !text-transparent"
               >
                 <>
-                  Lifetime Access,
+                  {t("lifetime_access")}
                   <br />
-                  Tailored Plans
+                  {t("tailored_plans")}
                 </>
               </Heading>
               <Text as="p" className="mt-3.5">
-                Discover Novads.AI and book your presale ticket
+                {t("discover_novads")}
               </Text>
             </div>
             <div className="ml-7 flex flex-1 gap-[18px] self-center md:ml-0 md:flex-col md:self-stretch">
