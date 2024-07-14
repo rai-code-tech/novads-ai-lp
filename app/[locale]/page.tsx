@@ -10,8 +10,10 @@ import HomeSection2 from "@/components/HomeSection2";
 import SettingsSection from "@/components/SettingsSection";
 import Link from "next/link";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations();
   return (
     <div className="w-full bg-black-900">
       <div className="flex flex-col items-center">
