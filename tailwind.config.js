@@ -6,7 +6,6 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
     extend: {
       colors: {
         black: { 900: "#080808", "900_01": "#000000" },
@@ -37,7 +36,7 @@ module.exports = {
         },
       },
       boxShadow: {},
-      fontFamily: { antonio: "Antonio", kontora: "Kontora" },
+      fontFamily: {  poppins: "Poppins" },
       backgroundImage: {
         gradient: "linear-gradient(180deg, #ffffff1e,#ffffff0a,#ffffff11)",
         gradient1: "linear-gradient(90deg, #5919c600,#5919c6,#5919c600)",
