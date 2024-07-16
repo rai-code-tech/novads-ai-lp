@@ -5,6 +5,25 @@ import React from "react";
 export default function HomePresaleSection() {
   const t = useTranslations();
 
+  const pricingOptionsBasic = {
+    basic_credits_per_month: true,
+    text_generation: true,
+    ads_platform_integration: true,
+    support: true,
+    exclusive_tutorials: true,
+    up_to_5_users: false,
+    integrated_editor: false,
+  };
+  const pricingOptionsPro = {
+    pro_credits_per_month: true,
+    text_generation: true,
+    ads_platform_integration: true,
+    support: true,
+    exclusive_tutorials: true,
+    up_to_5_users: true,
+    integrated_editor: true,
+  };
+
   return (
     <>
       {/* home presale section */}
@@ -25,10 +44,18 @@ export default function HomePresaleSection() {
           </div>
           <div className="flex flex-col w-full md:w-2/3 my-6 md:flex-row md:justify-evenly ">
             <PricingDetails
+              plan="Basic"
+              ideal={t("ideal_basic")}
+              options={pricingOptionsBasic}
+              price="49€"
               link="https://buy.stripe.com/28o0238YA88vd4A001"
               className="mb-6 md:mb-0 md:w-5/12"
             />
             <PricingDetails
+              plan="Pro"
+              ideal={t("ideal_pro")}
+              options={pricingOptionsPro}
+              price="149€"
               link="https://buy.stripe.com/00g8yz3EgcoL5C8144"
               className="md:w-5/12"
             />

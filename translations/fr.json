@@ -38,17 +38,25 @@
   "faq_description1": "Vos questions, nos réponses. Explorez notre section FAQ complète pour obtenir des informations sur la fonctionnalité, la personnalisation et le support.",
   "discover_pricing": "Découvrez l'ajustement parfait pour votre budget avec les tarifs Novads.AI",
   "subscribe": "S'abonner",
+ 
+
   "basic": "Basique",
-  "ideal_for_those": "Idéal pour ceux qui ont une utilisation mineure à modérée",
-  "price": "49€",
+  "ideal_basic": "Idéal pour ceux qui ont une utilisation ponctuelle",
+  "ideal_pro":"Idéal pour les agences",
+  "basic_price": "49€",
+  "pro_price": "149€",
   "price_period": "/ par mois",
   "book_your_ticket": "Réservez votre billet",
   "what_you_will_get": "Ce que vous obtiendrez",
-  "credits_per_month": "25 crédits/mois",
+  "basic_credits_per_month": "25 crédits / mois",
+  "pro_credits_per_month": "200 crédits / mois",
+
   "text_generation": "Génération de texte",
   "ads_platform_integration": "Intégration de la plateforme publicitaire",
   "support": "Support par Email & Chat 24/7",
-  "exclusive_tutorials": "Tutoriels exclusifs"
+  "exclusive_tutorials": "Tutoriels exclusifs",
+  "up_to_5_users": "Jusqu'à 5 utilisateurs",
+  "integrated_editor": "Éditeur intégré"
 }
       
 

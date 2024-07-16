@@ -38,15 +38,26 @@
     "faq_description1": "Your Questions, Answered. Explore our comprehensive FAQ section to gain insights into the functionality, customization, and support.",
     "discover_pricing": "Discover the Right Fit for Your Budget with Novads.AI Pricing",
     "subscribe": "Subscribe",
+  
+
+    "pro": "Pro",
     "basic": "Basic",
-  "ideal_for_those": "Ideal for those with minor to moderate use",
-  "price": "$49",
-  "price_period": "/ per month",
-  "book_your_ticket": "Book Your Ticket",
-  "what_you_will_get": "What you will get",
-  "credits_per_month": "25 credits/month",
-  "text_generation": "Text generation",
-  "ads_platform_integration": "Ads platform integration",
-  "support": "24/7 Email & Chat Support",
-  "exclusive_tutorials": "Exclusive tutorials"
+    "ideal_basic": "Ideal for those with minor to moderate use",
+    "ideal_pro":"Ideal for Agencies",
+    "basic_price": "49€",
+    "pro_price": "149€",
+    "price_period": "/ per month",
+    "book_your_ticket": "Book Your Ticket",
+    "what_you_will_get": "What you will get",
+    "basic_credits_per_month": "25 credits / month",
+    "pro_credits_per_month": "200 credits / month",
+
+    "text_generation": "Text generation",
+    "ads_platform_integration": "Ads platform integration",
+    "support": "24/7 Email & Chat Support",
+    "exclusive_tutorials": "Exclusive tutorials",
+    "up_to_5_users": "Up to 5 users",
+    "integrated_editor": "Integrated editor"
+  
+  
 }

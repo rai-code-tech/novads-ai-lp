@@ -1,13 +1,26 @@
 import { Text, Img, Button, Heading } from "./..";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 interface Props {
   className?: string;
   link: string;
+  price: string;
+  options: { [key: string]: boolean };
+  plan: string;
+  ideal: string;
 }
 
-export default function PricingDetails({ className, link, ...props }: Props) {
+export default function PricingDetails({
+  className,
+  link,
+  price,
+  options,
+  plan,
+  ideal,
+  ...props
+}: Props) {
   const t = useTranslations();
 
   return (
@@ -23,32 +36,22 @@ export default function PricingDetails({ className, link, ...props }: Props) {
           </div>
           <div className="flex flex-col items-start justify-center gap-1.5 self-stretch">
             <Heading size="textmd" as="p">
-              {t("basic")}
+              {plan}
             </Heading>
             <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("ideal_for_those")}
+              {ideal}
             </Text>
           </div>
         </div>
         <div className="flex flex-wrap items-center">
           <Heading size="headingxl" as="h1" className="tracking-[-0.96px]">
-            {t("price")}
+            {price}
           </Heading>
-          <Text
-            size="textxs"
-            as="p"
-            className="mb-2 self-end !text-white-a700_cc"
-          >
-            {t("price_period")}
-          </Text>
         </div>
         <a href={link} className="">
-          <Button
-            shape="round"
-            className="self-stretch !rounded-[28px] font-semibold"
-          >
+          <button className="self-stretch !rounded-[28px] bg-deep_purple-a200 text-white-a700 p-4 font-semibold">
             {t("book_your_ticket")}
-          </Button>
+          </button>
         </a>
       </div>
       <div className="h-px w-[78%] bg-white-a700_28" />
@@ -57,66 +60,25 @@ export default function PricingDetails({ className, link, ...props }: Props) {
           {t("what_you_will_get")}
         </Text>
         <div className="flex flex-col gap-4 self-stretch">
-          <div className="flex gap-2">
-            <Img
-              src="img_checkmark_white_a700.svg"
-              width={16}
-              height={16}
-              alt="Credits Icon"
-              className="h-[16px] w-[16px]"
-            />
-            <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("credits_per_month")}
-            </Text>
-          </div>
-          <div className="flex gap-2">
-            <Img
-              src="img_checkmark_white_a700.svg"
-              width={16}
-              height={16}
-              alt="Text Gen Icon"
-              className="h-[16px] w-[16px]"
-            />
-            <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("text_generation")}
-            </Text>
-          </div>
-          <div className="flex gap-2">
-            <Img
-              src="img_checkmark_white_a700.svg"
-              width={16}
-              height={16}
-              alt="Ads Icon"
-              className="h-[16px] w-[16px]"
-            />
-            <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("ads_platform_integration")}
-            </Text>
-          </div>
-          <div className="flex gap-2">
-            <Img
-              src="img_checkmark_white_a700.svg"
-              width={16}
-              height={16}
-              alt="Support Icon"
-              className="h-[16px] w-[16px]"
-            />
-            <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("support")}
-            </Text>
-          </div>
-          <div className="flex gap-2">
-            <Img
-              src="img_checkmark_white_a700.svg"
-              width={16}
-              height={16}
-              alt="Tutorials Icon"
-              className="h-[16px] w-[16px]"
-            />
-            <Text size="textxs" as="p" className="!text-white-a700_cc">
-              {t("exclusive_tutorials")}
-            </Text>
-          </div>
+          {Object.keys(options).map((optionKey) => (
+            <div key={optionKey} className="flex items-center gap-2">
+              {options[optionKey] ? (
+                <>
+                  <CheckIcon className="h-[16px] w-[16px] text-white-a700" />
+                  <Text size="textxs" as="p" className="!text-white-a700_cc">
+                    {t(optionKey)}
+                  </Text>
+                </>
+              ) : (
+                <>
+                  <XMarkIcon className="h-[16px] w-[16px] text-slate-500" />
+                  <Text size="textxs" as="p" className=" text-slate-500">
+                    {t(optionKey)}
+                  </Text>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

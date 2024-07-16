@@ -54,7 +54,7 @@ export default function HomeSection() {
             </div>
           </div>
           <div className="relative h-[628px] w-full md:w-full flex">
-            <div className="absolute bottom-0 md:left-[25%] top-0 z-[2] my-auto h-[602px] w-full md:w-3/4 rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1 md:h-auto">
+            <div className="absolute bottom-0 md:left-[25%] md:max-w-md top-0 z-[2] my-auto h-[602px] w-full md:w-3/4 rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1 md:h-auto">
               <video
                 className="absolute top-8 left-5 md:top-12 md:left-10 rounded-3xl rotate-3"
                 muted
