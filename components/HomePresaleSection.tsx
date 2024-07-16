@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { Text, Heading, Button } from ".";
 import PricingDetails from "./PricingDetails";
 import React from "react";
 
@@ -9,36 +8,24 @@ export default function HomePresaleSection() {
   return (
     <>
       {/* home presale section */}
-      <div className="relative mt-[-78px] flex justify-center self-stretch">
-        <div className="container-xs flex justify-center md:p-5">
-          <div className="flex w-full items-start gap-7 md:flex-col">
-            <div className="flex w-[38%] flex-col items-start md:w-full">
-              <Button
-                size="xs"
-                shape="square"
-                className="min-w-[112px] font-bold"
-              >
-                {t("presale")}
-              </Button>
-              <Heading
-                size="heading2xl"
-                as="h1"
-                className="mt-7 w-full bg-gradient2 bg-clip-text leading-[65px] !text-transparent"
-              >
-                <>
-                  {t("lifetime_access")}
-                  <br />
-                  {t("tailored_plans")}
-                </>
-              </Heading>
-              <Text as="p" className="mt-3.5">
-                {t("discover_novads")}
-              </Text>
-            </div>
-            <div className="ml-7 flex flex-1 gap-[18px] self-center md:ml-0 md:flex-col md:self-stretch">
-              <PricingDetails className="deep_purple_900_51_deep_purple_900_28_border border border-solid md:w-full md:gap-9" />
-              <PricingDetails className="p-[38px] md:w-full md:gap-9 sm:p-5" />
-            </div>
+      <div className=" p-2 w-full">
+        <div className="flex w-full items-start gap-7 flex-col md:flex-row ">
+          <div className="flex w-full flex-col items-start md:w-1/3 md:space-y-8 md:mt-6 md:ml-6 ">
+            <h1 className="p-4 text-white-a700 text-xl rounded-full bg-deep_purple-600 font-bold">
+              {t("presale")}
+            </h1>
+            <h2 className="text-3xl font-bold text-white-a700 py-4">
+              {t("lifetime_access")}
+              <br />
+              <span className="py-6">{t("tailored_plans")}</span>
+            </h2>
+            <p className="my-4 text-white-a700 text-left">
+              {t("discover_novads")}
+            </p>
+          </div>
+          <div className="flex flex-col w-full md:w-2/3 my-6 md:flex-row md:justify-evenly ">
+            <PricingDetails className="mb-6 md:mb-0 md:w-5/12" />
+            <PricingDetails className="md:w-5/12" />
           </div>
         </div>
       </div>

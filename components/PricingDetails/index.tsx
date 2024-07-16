@@ -12,7 +12,7 @@ export default function PricingDetails({ className, ...props }: Props) {
   return (
     <div
       {...props}
-      className={`${className} flex flex-col items-center w-[48%] gap-9 bg-gradient rounded-[32px]`}
+      className={`${className} flex flex-col items-center w-full gap-9 bg-gradient rounded-[32px]`}
     >
       <div className="mx-7 h-[4px] w-[74%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
       <div className="flex w-[78%] flex-col gap-[22px]">

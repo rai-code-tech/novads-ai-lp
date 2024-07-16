@@ -1,7 +1,7 @@
+import React, { Suspense } from "react";
 import { useTranslations } from "next-intl";
 import { Text, Heading, Button } from ".";
 import UserProfile from "./UserProfile";
-import React, { Suspense } from "react";
 
 const featureGrid = [
   {
@@ -35,34 +35,26 @@ const featureGrid = [
     descriptionText: "tailor_made_ads_description",
   },
 ];
+
 export default function HomeSection2() {
   const t = useTranslations();
 
   return (
     <>
-      {/* home section */}
-      <div className="mt-[108px] flex flex-col items-center self-stretch">
+      <div className="my-10 flex flex-col items-center self-stretch">
         <div className="container-xs flex flex-col gap-11 md:p-5">
-          <div className="mx-[204px] flex flex-col items-center md:mx-0">
-            <Button
-              size="xs"
-              shape="square"
-              className="min-w-[320px] font-bold"
-            >
+          <div className="flex flex-col items-center md:mx-0">
+            <h1 className="text-white-a700 text-xl bg-deep_purple-600 font-bold">
               {t("empowering_workflow")}
-            </Button>
-            <Heading
-              size="heading2xl"
-              as="h2"
-              className="mt-[22px] bg-gradient2 bg-clip-text !text-transparent"
-            >
+            </h1>
+            <h2 className="text-3xl bg-gradient2 bg-clip-text my-4 !text-transparent">
               {t("unleashing_potential")}
-            </Heading>
-            <Text as="p" className="mt-3">
+            </h2>
+            <p className="mt-3 text-white-a700 text-center">
               {t("discover_seamless_experience")}
-            </Text>
+            </p>
           </div>
-          <div className="grid grid-cols-3 justify-center gap-5 md:grid-cols-2 sm:grid-cols-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-5 justify-center mx-2">
             <Suspense fallback={<div>Loading feed...</div>}>
               {featureGrid.map((d, index) => (
                 <UserProfile

@@ -38,9 +38,70 @@ export default function Page() {
           </div>
         </div>
         <HomeSection1 />
-        <div className="relative my-[140px] md:h-auto">
+        <div className="relative my-6 md:h-auto">
           {/* settings section */}
           <SettingsSection />
+        </div>
+        <div className=" bg-[url(/images/img_group_13.png)] bg-cover bg-no-repeat m-auto">
+          {/* home presale section */}
+          <HomePresaleSection />
+        </div>
+        <HomeSection2 />
+        {/* f a q section */}
+        <FAQSection />
+        {/* f a q section */}
+        <FAQSection1 />
+        <div className="flex flex-col items-center my-10 space-y-6">
+          <Img
+            src="img_f8uwsendbchvoqyoltxiauzog9a.png"
+            width={200}
+            height={44}
+            alt="Featured Image"
+            className=""
+          />
+          <p className="mt-3 text-white-a700 text-center">
+            <>{t("discover_pricing")}</>
+          </p>
+          <div className="relative mt-3 h-[70px] w-[90%] content-center md:h-auto">
+            <Input
+              shape="round"
+              name="Email Field"
+              placeholder={t("subscribe")}
+              className="mx-auto"
+            />
+            <Button
+              shape="round"
+              className="absolute bottom-0 right-[10.00px] top-0 my-auto w-[120px] font-semibold"
+            >
+              {t("subscribe")}
+            </Button>
+          </div>
+          <div className="mt-10 flex flex-wrap justify-evenly w-full">
+            <Link href="Lorem" target="_blank" rel="noreferrer">
+              <p className="mt-3 text-white-a700 text-center">Lorem </p>
+            </Link>
+            <Link href="Lorem" target="_blank" rel="noreferrer">
+              <p className="mt-3 text-white-a700 text-center">Lorem </p>
+            </Link>
+            <Link href="Lorem" target="_blank" rel="noreferrer">
+              <p className="mt-3 text-white-a700 text-center">Lorem </p>
+            </Link>
+            <Link href="Lorem" target="_blank" rel="noreferrer">
+              <p className="mt-3 text-white-a700 text-center">Lorem </p>
+            </Link>
+          </div>
+        </div>
+        <div className="relative mt-[58px] h-[88px] content-center self-stretch md:h-auto">
+          {/* footer section */}
+          <FooterSection />
+          <Button
+            size="md"
+            variant="outline"
+            shape="circle"
+            className="absolute bottom-0 right-[7%] top-0 my-auto w-[56px] !rounded-[28px]"
+          >
+            <Img src="img_info.svg" width={28} height={28} />
+          </Button>
         </div>
       </div>
     </div>

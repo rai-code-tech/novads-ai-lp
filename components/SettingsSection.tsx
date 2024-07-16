@@ -21,8 +21,8 @@ export default function SettingsSection() {
         >
           {t("promo")}
         </Text>
-        <div className="my-10 w-4/5 m-auto">
-          <div className="bg-[#323232] rounded-lg p-2 ring-1 ring-white-a700">
+        <div className="my-10 w-4/5 m-auto flex flex-col md:flex-row md:w-full md:justify-evenly md:items-center">
+          <div className="bg-[#323232] md:w-1/3 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
             <Img
               src="graph.png"
               width={1440}
@@ -68,7 +68,7 @@ export default function SettingsSection() {
               </ul>
             </div>
           </div>
-          <div className="bg-[#323232] my-10 rounded-lg p-2 ring-1 ring-white-a700">
+          <div className="bg-[#323232] md:w-1/3 my-10 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
             <Img
               src="promogirl.png"
               width={1440}
