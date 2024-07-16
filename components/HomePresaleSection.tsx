@@ -24,8 +24,14 @@ export default function HomePresaleSection() {
             </p>
           </div>
           <div className="flex flex-col w-full md:w-2/3 my-6 md:flex-row md:justify-evenly ">
-            <PricingDetails className="mb-6 md:mb-0 md:w-5/12" />
-            <PricingDetails className="md:w-5/12" />
+            <PricingDetails
+              link="https://buy.stripe.com/28o0238YA88vd4A001"
+              className="mb-6 md:mb-0 md:w-5/12"
+            />
+            <PricingDetails
+              link="https://buy.stripe.com/00g8yz3EgcoL5C8144"
+              className="md:w-5/12"
+            />
           </div>
         </div>
       </div>

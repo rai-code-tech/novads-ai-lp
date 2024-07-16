@@ -54,30 +54,17 @@ export default function HomeSection() {
             </div>
           </div>
           <div className="relative h-[628px] w-full md:w-full flex">
-            <div className="absolute bottom-0 left-0 top-14 right-3 m-auto flex h-max flex-1 items-center justify-center sm:relative sm:flex-col">
-              <Img
-                src="img_group_41.svg"
-                width={354}
-                height={620}
-                alt="First Image"
-                className="relative z-[3] h-[620px] w-full sm:w-full"
-              />
-              <Img
-                src="img_group_7.svg"
-                width={254}
-                height={150}
-                alt="Second Image"
-                className="relative ml-[-40px] h-[150px] w-[14%] self-end sm:ml-0 sm:w-full sm:self-auto"
-              />
-            </div>
             <div className="absolute bottom-0 md:left-[25%] top-0 z-[2] my-auto h-[602px] w-full md:w-3/4 rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1 md:h-auto">
-              <Img
-                src="img_screenshot_355_cleanup.png"
-                width={354}
-                height={588}
-                alt="Screenshot Image"
-                className="mr-2 h-4/5 w-4/5 rounded-[12px] object-cover md:mr-0 md:h-auto"
-              />
+              <video
+                className="absolute top-8 left-5 md:top-12 md:left-10 rounded-3xl rotate-3"
+                muted
+                autoPlay
+                loop
+                width="320"
+                height="240"
+              >
+                <source src="/video/video.mp4" />
+              </video>
             </div>
           </div>
         </div>

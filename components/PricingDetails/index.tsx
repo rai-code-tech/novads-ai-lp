@@ -4,9 +4,10 @@ import { useTranslations } from "next-intl";
 
 interface Props {
   className?: string;
+  link: string;
 }
 
-export default function PricingDetails({ className, ...props }: Props) {
+export default function PricingDetails({ className, link, ...props }: Props) {
   const t = useTranslations();
 
   return (
@@ -41,12 +42,14 @@ export default function PricingDetails({ className, ...props }: Props) {
             {t("price_period")}
           </Text>
         </div>
-        <Button
-          shape="round"
-          className="self-stretch !rounded-[28px] font-semibold"
-        >
-          {t("book_your_ticket")}
-        </Button>
+        <a href={link} className="">
+          <Button
+            shape="round"
+            className="self-stretch !rounded-[28px] font-semibold"
+          >
+            {t("book_your_ticket")}
+          </Button>
+        </a>
       </div>
       <div className="h-px w-[78%] bg-white-a700_28" />
       <div className="mb-16 flex w-[78%] flex-col items-start justify-center gap-[18px]">
