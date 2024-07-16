@@ -41,6 +41,11 @@ export default function Header({ ...props }: Props) {
 
       <ul className="hidden md:flex justify-center gap-[84px] mt-3 md:mt-0 md:ml-6 md:bg-black md:text-white md:rounded-full md:px-6">
         <li>
+          <Link href="#pricing">
+            <Text as="p">Pricing</Text>
+          </Link>
+        </li>
+        {/* <li>
           <Link href="#">
             <Text as="p">Lorem</Text>
           </Link>
@@ -49,12 +54,7 @@ export default function Header({ ...props }: Props) {
           <Link href="#">
             <Text as="p">Lorem</Text>
           </Link>
-        </li>
-        <li>
-          <Link href="#">
-            <Text as="p">Lorem</Text>
-          </Link>
-        </li>
+        </li> */}
       </ul>
 
       <Button

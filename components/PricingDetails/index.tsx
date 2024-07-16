@@ -1,7 +1,10 @@
-import { Text, Img, Button, Heading } from "./..";
+"use client";
+import { Text, Heading } from "./..";
 import React from "react";
 import { useTranslations } from "next-intl";
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { sendGTMEvent } from "@next/third-parties/google";
+import { trackEvent } from "@openpanel/nextjs";
 
 interface Props {
   className?: string;
@@ -10,6 +13,7 @@ interface Props {
   options: { [key: string]: boolean };
   plan: string;
   ideal: string;
+  currency?: string;
 }
 
 export default function PricingDetails({
@@ -19,16 +23,22 @@ export default function PricingDetails({
   options,
   plan,
   ideal,
+  currency,
   ...props
 }: Props) {
   const t = useTranslations();
 
+  const trackPurchase = (value: string, currency: string | undefined) => {
+    sendGTMEvent({ event: "purchase", value, currency });
+    trackEvent("purchase", { price, currency });
+  };
   return (
     <div
       {...props}
       className={`${className} flex flex-col items-center w-full gap-9 bg-gradient rounded-[32px]`}
+      id="pricing"
     >
-      <div className="mx-7 h-[4px] w-[74%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
+      <div className="mx-7 h-[4px] w-[79%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
       <div className="flex w-[78%] flex-col gap-[22px]">
         <div className="flex flex-col items-start gap-6">
           <div className="flex w-[14%] flex-col items-center rounded-[20px] bg-deep_purple-600 p-2.5">
@@ -46,9 +56,10 @@ export default function PricingDetails({
         <div className="flex flex-wrap items-center">
           <Heading size="headingxl" as="h1" className="tracking-[-0.96px]">
             {price}
+            {currency}
           </Heading>
         </div>
-        <a href={link} className="">
+        <a onClick={() => trackPurchase(price, currency)} href={link}>
           <button className="self-stretch !rounded-[28px] bg-deep_purple-a200 text-white-a700 p-4 font-semibold">
             {t("book_your_ticket")}
           </button>

@@ -8,7 +8,6 @@ import HomeSection from "@/components/HomeSection";
 import HomeSection1 from "@/components/HomeSection1";
 import HomeSection2 from "@/components/HomeSection2";
 import SettingsSection from "@/components/SettingsSection";
-import Link from "next/link";
 import React from "react";
 import { useTranslations } from "next-intl";
 
@@ -30,7 +29,7 @@ export default function Page() {
               <div className=" md:p-5">
                 <Header />
               </div>
-              <div className="mb-7 flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-3">
                 {/* home section */}
                 <HomeSection />
               </div>
@@ -38,7 +37,7 @@ export default function Page() {
           </div>
         </div>
         <HomeSection1 />
-        <div className="relative my-6 md:h-auto">
+        <div className="relative my-1 md:h-auto">
           {/* settings section */}
           <SettingsSection />
         </div>
@@ -62,7 +61,7 @@ export default function Page() {
           <p className="mt-3 text-white-a700 text-center">
             <>{t("discover_pricing")}</>
           </p>
-          <div className="relative mt-3 h-[70px] w-[90%] content-center md:h-auto">
+          {/* <div className="relative mt-3 h-[70px] w-[90%] content-center md:h-auto">
             <Input
               shape="round"
               name="Email Field"
@@ -75,9 +74,9 @@ export default function Page() {
             >
               {t("subscribe")}
             </Button>
-          </div>
+          </div> */}
           <div className="mt-10 flex flex-wrap justify-evenly w-full">
-            <Link href="Lorem" target="_blank" rel="noreferrer">
+            {/* <Link href="Lorem" target="_blank" rel="noreferrer">
               <p className="mt-3 text-white-a700 text-center">Lorem </p>
             </Link>
             <Link href="Lorem" target="_blank" rel="noreferrer">
@@ -88,7 +87,7 @@ export default function Page() {
             </Link>
             <Link href="Lorem" target="_blank" rel="noreferrer">
               <p className="mt-3 text-white-a700 text-center">Lorem </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="relative mt-[58px] h-[88px] content-center self-stretch md:h-auto">

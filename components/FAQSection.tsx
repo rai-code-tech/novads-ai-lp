@@ -28,7 +28,7 @@ export default function FAQSection() {
           </p>
         </div>
         <Accordion preExpanded={[0]} className="flex w-[90%] flex-col gap-5">
-          {[...Array(4)].map((_, i) => (
+          {[...Array(1)].map((_, i) => (
             <AccordionItem uuid={i} key={`FAQ List${i}`}>
               <div className=" my-6 flex flex-1 flex-col gap-4 md:mx-0">
                 <AccordionItemHeading className="w-full">

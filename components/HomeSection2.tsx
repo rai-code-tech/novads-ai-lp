@@ -9,26 +9,13 @@ const featureGrid = [
     headingText: "consistency_quality",
     descriptionText: "consistency_quality_description",
   },
-  {
-    userImage: "img_mask_group_64x64.png",
-    headingText: "consistency_quality",
-    descriptionText: "consistency_quality_description",
-  },
+
   {
     userImage: "img_mask_group_1.png",
     headingText: "cost_effective",
     descriptionText: "cost_effective_description",
   },
-  {
-    userImage: "img_mask_group_64x64.png",
-    headingText: "consistency_quality",
-    descriptionText: "consistency_quality_description",
-  },
-  {
-    userImage: "img_mask_group_64x64.png",
-    headingText: "consistency_quality",
-    descriptionText: "consistency_quality_description",
-  },
+
   {
     userImage: "img_mask_group_64x64.png",
     headingText: "tailor_made_ads",

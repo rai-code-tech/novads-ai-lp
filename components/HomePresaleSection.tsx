@@ -42,12 +42,13 @@ export default function HomePresaleSection() {
               {t("discover_novads")}
             </p>
           </div>
-          <div className="flex flex-col w-full md:w-2/3 my-6 md:flex-row md:justify-evenly ">
+          <div className="flex flex-col w-full my-6 md:flex-row md:justify-between ">
             <PricingDetails
               plan="Basic"
               ideal={t("ideal_basic")}
               options={pricingOptionsBasic}
-              price="49€"
+              price="49"
+              currency="€"
               link="https://buy.stripe.com/28o0238YA88vd4A001"
               className="mb-6 md:mb-0 md:w-5/12"
             />
@@ -55,7 +56,8 @@ export default function HomePresaleSection() {
               plan="Pro"
               ideal={t("ideal_pro")}
               options={pricingOptionsPro}
-              price="149€"
+              price="149"
+              currency="€"
               link="https://buy.stripe.com/00g8yz3EgcoL5C8144"
               className="md:w-5/12"
             />

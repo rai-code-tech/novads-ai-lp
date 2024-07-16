@@ -3,7 +3,9 @@ import "@/styles/tailwind.css";
 import "@/styles/index.css";
 import "@/styles/font.css";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { OpenpanelProvider } from "@openpanel/nextjs";
 
 async function RootLayout({
   children,
@@ -16,6 +18,7 @@ async function RootLayout({
 
   return (
     <html lang={locale}>
+      <GoogleTagManager gtmId="GTM-MRL49VD4" />
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +33,12 @@ async function RootLayout({
         />
       </head>
       <body>
+        <OpenpanelProvider
+          clientId="66c5591b-147e-4023-82e9-7f7eeda873aa"
+          trackScreenViews={true}
+          trackAttributes={true}
+          trackOutgoingLinks={true}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
