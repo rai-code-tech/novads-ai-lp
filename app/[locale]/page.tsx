@@ -41,7 +41,7 @@ export default function Page() {
           {/* settings section */}
           <SettingsSection />
         </div>
-        <div className=" bg-[url(/images/img_group_13.png)] bg-cover bg-no-repeat m-auto">
+        <div className=" bg-[url(/images/img_group_13.png)] bg-cover bg-no-repeat m-auto w-4/5 ">
           {/* home presale section */}
           <HomePresaleSection />
         </div>

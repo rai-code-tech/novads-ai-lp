@@ -28,8 +28,8 @@ export default function HomePresaleSection() {
     <>
       {/* home presale section */}
       <div className=" p-2 w-full">
-        <div className="flex w-full items-start gap-7 flex-col md:flex-row ">
-          <div className="flex w-full flex-col items-start md:w-1/3 md:space-y-8 md:mt-6 md:ml-6 ">
+        <div className="flex w-full items-start gap-7 flex-col lg:flex-row ">
+          <div className="flex w-full flex-col items-start lg:w-1/3 lg:space-y-8 lg:mt-6 lg:ml-6 ">
             <h1 className="p-4 text-white-a700 text-xl rounded-full bg-deep_purple-600 font-bold">
               {t("presale")}
             </h1>
@@ -42,7 +42,7 @@ export default function HomePresaleSection() {
               {t("discover_novads")}
             </p>
           </div>
-          <div className="flex flex-col w-full my-6 md:flex-row md:justify-between ">
+          <div className="flex flex-col w-full my-6 lg:flex-row lg:justify-between ">
             <PricingDetails
               plan="Basic"
               ideal={t("ideal_basic")}
@@ -50,7 +50,7 @@ export default function HomePresaleSection() {
               price="49"
               currency="€"
               link="https://buy.stripe.com/28o0238YA88vd4A001"
-              className="mb-6 md:mb-0 md:w-5/12"
+              className="mb-6 lg:mb-0 lg:w-[48%]"
             />
             <PricingDetails
               plan="Pro"
@@ -59,7 +59,7 @@ export default function HomePresaleSection() {
               price="149"
               currency="€"
               link="https://buy.stripe.com/00g8yz3EgcoL5C8144"
-              className="md:w-5/12"
+              className="lg:w-[48%]"
             />
           </div>
         </div>

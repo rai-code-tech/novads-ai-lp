@@ -41,7 +41,7 @@ export default function PricingDetails({
       <div className="mx-7 h-[4px] w-[79%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
       <div className="flex w-[78%] flex-col gap-[22px]">
         <div className="flex flex-col items-start gap-6">
-          <div className="flex w-[14%] flex-col items-center rounded-[20px] bg-deep_purple-600 p-2.5">
+          <div className="flex  flex-col items-center rounded-[20px] bg-deep_purple-600 p-2.5">
             <div className="h-[20px] w-[20px] rounded-[10px] bg-gray-100" />
           </div>
           <div className="flex flex-col items-start justify-center gap-1.5 self-stretch">
