@@ -41,9 +41,9 @@ export default function HomeSection() {
               {t("home-p")}
             </Text>
             <div className="ml-2 mt-6 flex items-start justify-between gap-5 md:ml-0">
-              <Button shape="round" className="min-w-[160px] font-semibold">
+              <a href="#pricing"><Button shape="round" className="min-w-[160px] font-semibold">
                 {t("start")}
-              </Button>
+              </Button></a>
               <Img
                 src="img_vector.svg"
                 width={112}

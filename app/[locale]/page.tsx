@@ -10,6 +10,8 @@ import HomeSection2 from "@/components/HomeSection2";
 import SettingsSection from "@/components/SettingsSection";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { FaTiktok } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Page() {
   const t = useTranslations();
@@ -93,16 +95,29 @@ export default function Page() {
         <div className="relative mt-[58px] h-[88px] content-center self-stretch md:h-auto">
           {/* footer section */}
           <FooterSection />
-          <Button
-            size="md"
-            variant="outline"
-            shape="circle"
-            className="absolute bottom-0 right-[7%] top-0 my-auto w-[56px] !rounded-[28px]"
-          >
-            <Img src="img_info.svg" width={28} height={28} />
-          </Button>
+          <a href="https://www.instagram.com/novads.ai/?igsh=MWNnYnNhZWp0Z3pyNg%3D%3D" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="md"
+              variant="outline"
+              shape="circle"
+              className="absolute bottom-0 right-[7%] top-0 my-auto w-[56px] !rounded-[28px]"
+            >
+             <FaTiktok className="text-white-a700 text-5xl" />
+            </Button>
+          </a>
+          <a href="https://www.instagram.com/novads.ai/?igsh=MWNnYnNhZWp0Z3pyNg%3D%3D" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="md"
+              variant="outline"
+              shape="circle"
+              className="absolute bottom-0 right-[14%] top-0 my-auto w-[56px] !rounded-[28px]"
+            >
+              <FaInstagram className="text-white-a700 text-5xl" />
+            </Button>
+          </a>
+        </div>
         </div>
       </div>
-    </div>
+    
   );
 }

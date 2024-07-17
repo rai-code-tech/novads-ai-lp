@@ -16,13 +16,13 @@ export default function FAQSection1() {
           <p className="mt-3 text-white-a700 text-center">
             {t("faq_description1")}
           </p>
-          <Button
+         <a href="#pricing"><Button
             color="white_A700"
             shape="round"
             className="mt-5 min-w-[160px] font-semibold"
           >
             {t("start")}
-          </Button>
+          </Button></a>
         </div>
       </div>
     </>

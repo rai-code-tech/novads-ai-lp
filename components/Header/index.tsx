@@ -57,12 +57,12 @@ export default function Header({ ...props }: Props) {
         </li> */}
       </ul>
 
-      <Button
+      <a href="#pricing"><Button
         shape="round"
         className="hidden md:block min-w-[160px] self-center font-semibold bg-purple-600 text-white hover:bg-purple-700"
       >
         {t("start")}
-      </Button>
+      </Button></a>
 
       {isMenuOpen && (
         <ul className="flex flex-col items-center gap-4 mt-4 md:hidden bg-white shadow-lg rounded-lg p-4">
@@ -81,12 +81,12 @@ export default function Header({ ...props }: Props) {
               <Text as="p">Lorem</Text>
             </Link>
           </li>
-          <Button
+          <a href="#pricing"><Button
             shape="round"
             className="min-w-[160px] font-semibold bg-purple-600 text-white hover:bg-purple-700"
           >
             {t("start")}
-          </Button>
+          </Button></a>
         </ul>
       )}
     </header>
