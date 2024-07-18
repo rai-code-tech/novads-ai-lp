@@ -8,7 +8,7 @@ export default function HomeSection() {
     <>
       {/* home section */}
       <div className="flex w-[96%] justify-center md:w-full">
-        <div className="flex w-full items-center md:flex-row flex-col">
+        <div className="flex w-full items-center md:flex-row flex-col  xl:pl-20">
           <div className="flex flex-1 flex-col md:self-stretch md:w-1/2">
             <div className="flex flex-col gap-7 w-full">
               <Img
@@ -53,18 +53,22 @@ export default function HomeSection() {
               />
             </div>
           </div>
-          <div className="relative h-[628px] w-full md:w-full flex">
-            <div className="absolute bottom-0 md:left-[25%] md:max-w-md top-0 z-[2] my-auto h-[602px] w-full md:w-3/4 rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1 md:h-auto">
-              <video
-                className="absolute top-8 left-5 md:top-12 md:left-10 rounded-3xl rotate-3"
-                muted
-                autoPlay
-                loop
-                width="320"
-                height="240"
-              >
-                <source src="/video/video.mp4" />
-              </video>
+          <div className="relative h-[628px] w-full md:w-full flex justify-center">
+            <div className="absolute bottom-0 md:left-auto md:right-auto w-[350px] xl:left-[50%] h-[550px] max-w-[350px] max-h-[550px] top-0 z-[2] my-auto rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1">
+              <div className="relative w-full h-full flex flex-col justify-center items-center">
+                <video
+                  className="rounded-3xl rotate-3 w-[85%]"
+                  muted
+                  autoPlay
+                  loop
+                >
+                  <source src="/video/video.mp4" />
+                </video>
+              </div>
+              <p className="italic text-center text-deep_purple-a200 mt-4">
+                {t("video_views")} <br />
+                {t("yomi")}
+              </p>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { CheckBox, Text, Heading, Img } from ".";
 import React from "react";
+import { CheckIcon } from "@heroicons/react/24/outline";
 
 export default function SettingsSection() {
   const t = useTranslations();
@@ -21,8 +22,8 @@ export default function SettingsSection() {
         >
           {t("promo")}
         </Text>
-        <div className="my-10 w-4/5 m-auto flex flex-col md:flex-row md:w-full md:justify-evenly md:items-center">
-          <div className="bg-[#323232] md:w-1/3 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
+        <div className="my-10 w-4/5 m-auto flex flex-col lg:flex-row lg:w-full lg:justify-evenly lg:items-center">
+          <div className="bg-[#323232] lg:min-h-[575px] lg:w-1/3 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
             <Img
               src="graph.png"
               width={1440}
@@ -38,8 +39,13 @@ export default function SettingsSection() {
                 {t("opti-desc")}
               </Text>
               <ul className="mt-3 flex flex-col items-start gap-4 self-stretch">
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     id="CheckmarkItem"
                     className="pl-2 italic text-white-a700"
@@ -47,8 +53,13 @@ export default function SettingsSection() {
                     {t("opti-first")}
                   </li>
                 </span>
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     className="pl-2 italic text-white-a700"
                     id="FineTuningCheckbox"
@@ -56,8 +67,13 @@ export default function SettingsSection() {
                     {t("opti-sec")}
                   </li>
                 </span>
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     className="pl-2 italic text-white-a700"
                     id="CompetitorCheckbox"
@@ -68,13 +84,13 @@ export default function SettingsSection() {
               </ul>
             </div>
           </div>
-          <div className="bg-[#323232] md:w-1/3 my-10 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
+          <div className="bg-[#323232] lg:min-h-[575px] justify-evenly lg:w-1/3 my-10 rounded-lg p-4 ring-1 ring-white-a700 flex flex-col">
             <Img
               src="promogirl.png"
               width={1440}
               height={1120}
               alt="Image"
-              className="rounded-lg top-3 h-56 object-cover"
+              className="rounded-lg top-3 h-72 object-cover "
             />
             <div className="mr-3.5 flex flex-col items-start self-stretch md:mr-0">
               <h2 className="text-xl font-semibold uppercase text-center text-white-a700 py-4">
@@ -84,8 +100,13 @@ export default function SettingsSection() {
                 {t("info-desc")}
               </Text>
               <ul className="mt-3 flex flex-col items-start gap-4 self-stretch">
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     id="CheckmarkItem"
                     className="pl-2 italic text-white-a700"
@@ -93,8 +114,13 @@ export default function SettingsSection() {
                     {t("info-first")}
                   </li>
                 </span>
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     className="pl-2 italic text-white-a700"
                     id="FineTuningCheckbox"
@@ -102,8 +128,13 @@ export default function SettingsSection() {
                     {t("info-sec")}
                   </li>
                 </span>
-                <span className="flex flex-row">
-                  <CheckBox checked />
+                <span className="flex flex-row item-center">
+                  <CheckIcon
+                    width={25}
+                    strokeWidth={4}
+                    color="white"
+                    className="bg-deep_purple-a200 rounded-md p-1 ring-deep_purple-a400 ring-1"
+                  />
                   <li
                     className="pl-2 italic text-white-a700"
                     id="CompetitorCheckbox"
