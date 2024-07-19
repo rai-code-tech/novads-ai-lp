@@ -5,7 +5,7 @@ export default function HomeSection1() {
   return (
     <>
       {/* home section */}
-      <div className="mt-[600px] mb-20 flex justify-center self-stretch">
+      <div className="mt-[500px] md:my-36 mb-20 flex justify-center self-stretch">
         <div className=" flex justify-center md:p-5">
           <Img
             src="img_home.png"
