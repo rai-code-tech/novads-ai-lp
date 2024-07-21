@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { useTranslations } from "next-intl";
-import { Text, Heading, Button } from ".";
 import UserProfile from "./UserProfile";
 
 const featureGrid = [

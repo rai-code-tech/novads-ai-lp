@@ -1,4 +1,6 @@
-import { Text, Heading, Img } from "./..";
+import { Img } from "@/components/Img";
+import { Text } from "@/components/Text";
+import { Heading } from "@/components/Heading";
 import React from "react";
 
 interface Props {
@@ -15,8 +17,17 @@ export default function UserProfile({
   ...props
 }: Props) {
   return (
-    <div {...props} className={`${props.className} flex flex-col items-center w-full px-5 py-8`}>
-      <Img src={userImage} width={64} height={64} alt="Image" className="h-[64px] w-[64px] object-cover" />
+    <div
+      {...props}
+      className={`${props.className} flex flex-col items-center w-full px-5 py-8`}
+    >
+      <Img
+        src={userImage}
+        width={64}
+        height={64}
+        alt="Image"
+        className="h-[64px] w-[64px] object-cover"
+      />
       <Heading size="headingmd" as="h4" className="mt-[22px]">
         {headingText}
       </Heading>

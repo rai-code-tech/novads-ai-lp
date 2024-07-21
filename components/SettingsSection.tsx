@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { CheckBox, Text, Heading, Img } from ".";
-import React from "react";
+import { Img } from "@/components/Img";
+import { Text } from "@/components/Text";
 import { CheckIcon } from "@heroicons/react/24/outline";
 
 export default function SettingsSection() {

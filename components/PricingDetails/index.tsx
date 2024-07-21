@@ -1,10 +1,13 @@
 "use client";
-import { Text, Heading } from "./..";
+
+import { Text } from "@/components/Text";
+import { Heading } from "@/components/Heading";
 import React from "react";
 import { useTranslations } from "next-intl";
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { sendGTMEvent } from "@next/third-parties/google";
 import { trackEvent } from "@openpanel/nextjs";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 interface Props {
   className?: string;
@@ -35,9 +38,10 @@ export default function PricingDetails({
   return (
     <div
       {...props}
-      className={`${className} flex flex-col items-center w-full gap-9 bg-gradient rounded-[32px]`}
+      className={`${className} flex flex-col items-center w-full gap-9 bg-gradient rounded-[32px] relative`}
       id="pricing"
     >
+      <BorderBeam duration={7} size={490} />
       <div className="mx-7 h-[4px] w-[79%] bg-gradient1 blur-[4.00px] backdrop-opacity-[0.5]" />
       <div className="flex w-[78%] flex-col gap-[22px]">
         <div className="flex flex-col items-start gap-6">

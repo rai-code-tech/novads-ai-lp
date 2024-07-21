@@ -1,4 +1,5 @@
-import { Button, Img, Text, Input } from "@/components";
+import { Img } from "@/components/Img";
+import { Button } from "@/components/Button";
 import Header from "@/components/Header";
 import FAQSection from "@/components/FAQSection";
 import FAQSection1 from "@/components/FAQSection1";
@@ -12,11 +13,12 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import CustomCarousel from "@/components/CustomCarousel";
 
 export default function Page() {
   const t = useTranslations();
   return (
-    <div className="w-full h-auto bg-black-900">
+    <div className="w-full h-auto bg-black-900 overflow-x-hidden">
       <div className="flex flex-col items-center">
         <div className="relative h-[880px] self-stretch md:h-auto">
           <Img
@@ -39,6 +41,9 @@ export default function Page() {
           </div>
         </div>
         <HomeSection1 />
+        <div className="w-full mb-6">
+          <CustomCarousel />
+        </div>
         <div className="relative my-1 md:h-auto">
           {/* settings section */}
           <SettingsSection />
@@ -54,7 +59,7 @@ export default function Page() {
         <FAQSection1 />
         <div className="flex flex-col items-center my-10 space-y-6">
           <Img
-            src="img_f8uwsendbchvoqyoltxiauzog9a.png"
+            src="logo.png"
             width={200}
             height={44}
             alt="Featured Image"
@@ -95,17 +100,25 @@ export default function Page() {
         <div className="relative mt-[58px] h-[88px] content-center self-stretch md:h-auto">
           {/* footer section */}
           <FooterSection />
-          <a href="https://www.instagram.com/novads.ai/?igsh=MWNnYnNhZWp0Z3pyNg%3D%3D" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.tiktok.com/@novads.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               size="md"
               variant="outline"
               shape="circle"
               className="absolute bottom-0 right-[7%] top-0 my-auto w-[56px] !rounded-[28px]"
             >
-             <FaTiktok className="text-white-a700 text-5xl" />
+              <FaTiktok className="text-white-a700 text-5xl" />
             </Button>
           </a>
-          <a href="https://www.instagram.com/novads.ai/?igsh=MWNnYnNhZWp0Z3pyNg%3D%3D" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/novads.ai/?igsh=MWNnYnNhZWp0Z3pyNg%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               size="md"
               variant="outline"
@@ -116,8 +129,7 @@ export default function Page() {
             </Button>
           </a>
         </div>
-        </div>
       </div>
-    
+    </div>
   );
 }

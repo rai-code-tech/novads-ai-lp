@@ -2,21 +2,21 @@
     "title1": "Discover the first",
     "title2": "AI-powered ad",
     "title3": "creation tool",
-    "home-p" : "Turn your words into the most beautiful ads. With Novads.ai, generate your next creatives from your thoughts.",
+    "home-p": "Turn your words into the most beautiful ads. With Novads.ai, generate your next creatives from your thoughts.",
     "start": "Get Started",
-    "imagine" : "Imagine",
-    "write-admire" : "write, admire",
-    "promo" : "Discover a Seamless Experience with Novads.AI - Boosting Productivity, Efficiency, and Collaboration in Every Click.",
+    "imagine": "Imagine",
+    "write-admire": "write, admire",
+    "promo": "Discover a Seamless Experience with Novads.AI - Boosting Productivity, Efficiency, and Collaboration in Every Click.",
     "promo-title": "Optimize Performance",
-    "opti-desc":"Take your ads performance to the next level with conversion optimized visuals",
-    "opti-first":"Trained data on most viral content",
-    "opti-sec":"Fine tuning over time",
-    "opti-ter":"Be one step ahead of your competitors",
-    "promo-title-sec" : "AI-Powered Insights",
-    "info-desc":"Our AI analyzes your brand and remembers it to produce a tailor-made experience",
-    "info-first":"Data-Driven Generation",
-    "info-sec":"In-depth Brand Understanding",
-    "info-ter":"Personalized Experience",
+    "opti-desc": "Take your ads performance to the next level with conversion optimized visuals",
+    "opti-first": "Trained data on most viral content",
+    "opti-sec": "Fine tuning over time",
+    "opti-ter": "Be one step ahead of your competitors",
+    "promo-title-sec": "AI-Powered Insights",
+    "info-desc": "Our AI analyzes your brand and remembers it to produce a tailor-made experience",
+    "info-first": "Data-Driven Generation",
+    "info-sec": "In-depth Brand Understanding",
+    "info-ter": "Personalized Experience",
     "presale": "Presale",
     "lifetime_access": "Lifetime Access,",
     "tailored_plans": "Tailored Plans",
@@ -38,12 +38,10 @@
     "faq_description1": "Your Questions, Answered. Explore our comprehensive FAQ section to gain insights into the functionality, customization, and support.",
     "discover_pricing": "Discover the Right Fit for Your Budget with Novads.AI Pricing",
     "subscribe": "Subscribe",
-  
-
     "pro": "Pro",
     "basic": "Basic",
     "ideal_basic": "Ideal for those with minor to moderate use",
-    "ideal_pro":"Ideal for Agencies",
+    "ideal_pro": "Ideal for Agencies",
     "basic_price": "49€",
     "pro_price": "149€",
     "price_period": "/ per month",
@@ -51,17 +49,12 @@
     "what_you_will_get": "What you will get",
     "basic_credits_per_month": "25 credits / month",
     "pro_credits_per_month": "200 credits / month",
-
     "text_generation": "Text generation",
     "ads_platform_integration": "Ads platform integration",
     "support": "24/7 Email & Chat Support",
     "exclusive_tutorials": "Exclusive tutorials",
     "up_to_5_users": "Up to 5 users",
     "integrated_editor": "Integrated editor",
-
-    "video_views": "Over 700,000 views",
-    "yomi" : "on Yomi Denzel's video"
-    
-      
-  
+    "yomi": "views on Yomi Denzel's video",
+    "allRightReserved": "Novads.AI. All rights reserved."
 }

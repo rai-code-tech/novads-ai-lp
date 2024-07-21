@@ -1,4 +1,4 @@
-import { Img } from ".";
+import { Img } from "@/components/Img";
 import React from "react";
 
 export default function HomeSection1() {
@@ -12,7 +12,7 @@ export default function HomeSection1() {
             width={1240}
             height={882}
             alt="Home Image"
-            className=" w-full object-cover md:h-auto"
+            className="w-[80%] object-cover md:h-auto"
           />
         </div>
       </div>

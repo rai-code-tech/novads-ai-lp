@@ -1,6 +1,8 @@
 "use client";
 
-import { Text, Img, Heading } from ".";
+import { Img } from "@/components/Img";
+import { Text } from "@/components/Text";
+import { Heading } from "@/components/Heading";
 import React from "react";
 import {
   AccordionItemPanel,

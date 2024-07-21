@@ -1,6 +1,10 @@
 import { useTranslations } from "next-intl";
-import { Img, Button, Text, Heading } from ".";
+import { Img } from "@/components/Img";
+import { Button } from "@/components/Button";
+import { Text } from "@/components/Text";
+import { Heading } from "@/components/Heading";
 import React from "react";
+import NumberTicker from "./magicui/number-ticker";
 
 export default function HomeSection() {
   const t = useTranslations();
@@ -41,9 +45,11 @@ export default function HomeSection() {
               {t("home-p")}
             </Text>
             <div className="ml-2 mt-6 flex items-start justify-between gap-5 md:ml-0">
-              <a href="#pricing"><Button shape="round" className="min-w-[160px] font-semibold">
-                {t("start")}
-              </Button></a>
+              <a href="#pricing">
+                <Button shape="round" className="min-w-[160px] font-semibold">
+                  {t("start")}
+                </Button>
+              </a>
               <Img
                 src="img_vector.svg"
                 width={112}
@@ -65,8 +71,13 @@ export default function HomeSection() {
                   <source src="/video/video.mp4" />
                 </video>
               </div>
-              <p className="italic text-center text-deep_purple-a200 mt-4">
-                {t("video_views")} <br />
+              <p className="italic text-center text-white-a700 drop-shadow-md shadow-gray-200 mt-4">
+                <NumberTicker
+                  className="bg-gradient-to-r from-purple-500 to-purple-800 rounded-lg px-2 py-1"
+                  value={700000}
+                  direction="up"
+                />
+                <br />
                 {t("yomi")}
               </p>
             </div>

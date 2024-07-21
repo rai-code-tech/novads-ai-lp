@@ -1,4 +1,4 @@
-import { Button, Text, Heading, Img } from ".";
+import { Button } from "@/components/Button";
 import React from "react";
 import { useTranslations } from "next-intl";
 
@@ -16,13 +16,15 @@ export default function FAQSection1() {
           <p className="mt-3 text-white-a700 text-center">
             {t("faq_description1")}
           </p>
-         <a href="#pricing"><Button
-            color="white_A700"
-            shape="round"
-            className="mt-5 min-w-[160px] font-semibold"
-          >
-            {t("start")}
-          </Button></a>
+          <a href="#pricing">
+            <Button
+              color="white_A700"
+              shape="round"
+              className="mt-5 min-w-[160px] font-semibold"
+            >
+              {t("start")}
+            </Button>
+          </a>
         </div>
       </div>
     </>

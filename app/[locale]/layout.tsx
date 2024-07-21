@@ -17,7 +17,7 @@ async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale ?? "en"}>
       <GoogleTagManager gtmId="GTM-MRL49VD4" />
       <head>
         <meta charSet="utf-8" />
