@@ -59,19 +59,14 @@ export default function HomeSection() {
               />
             </div>
           </div>
-          <div className="relative h-[628px] w-full md:w-full flex justify-center">
-            <div className="absolute bottom-0 md:left-auto md:right-auto w-[350px] xl:left-[50%] h-[550px] max-w-[350px] max-h-[550px] top-0 z-[2] my-auto rounded-[12px] bg-[url(/images/img_group_14.svg)] bg-cover bg-no-repeat py-1">
+          <div className="relative min-h-[520px] w-full md:w-full flex mt-8 justify-center">
+            <div className="absolute bottom-0 md:left-auto md:right-auto xl:left-[50%] p-3 top-0 z-[2] rounded-3xl bg-[#9253fd] rotate-6">
               <div className="relative w-full h-full flex flex-col justify-center items-center">
-                <video
-                  className="rounded-3xl rotate-3 w-[85%]"
-                  muted
-                  autoPlay
-                  loop
-                >
+                <video className="rounded-3xl " muted autoPlay loop>
                   <source src="/video/video.mp4" />
                 </video>
               </div>
-              <p className="italic text-center text-white-a700 drop-shadow-md shadow-gray-200 mt-4">
+              <p className="italic text-center text-white-a700 drop-shadow-md shadow-gray-200 mt-8">
                 <NumberTicker
                   className="bg-gradient-to-r from-purple-500 to-purple-800 rounded-lg px-2 py-1"
                   value={700000}
