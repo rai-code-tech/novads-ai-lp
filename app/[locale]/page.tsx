@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <div className="w-full h-auto bg-black-900 overflow-x-hidden">
       <div className="flex flex-col items-center">
-        <div className="relative h-[880px] self-stretch md:h-auto">
+        <div className=" h-[880px] self-stretch md:h-auto">
           <Img
             src="img_group_8.png"
             width={1440}
@@ -44,7 +44,7 @@ export default function Page() {
         <div className="w-full mb-6">
           <CustomCarousel />
         </div>
-        <div className="relative my-1 md:h-auto">
+        <div className=" my-1 md:h-auto">
           {/* settings section */}
           <SettingsSection />
         </div>

@@ -11,7 +11,7 @@ export default function HomeSection() {
   return (
     <>
       {/* home section */}
-      <div className="flex w-[96%] justify-center md:w-full">
+      <div className="flex w-[96%] my-2 justify-center md:w-full">
         <div className="flex w-full items-center md:flex-row flex-col  xl:pl-20">
           <div className="flex flex-1 flex-col md:self-stretch md:w-1/2">
             <div className="flex flex-col gap-7 w-full">
@@ -71,7 +71,7 @@ export default function HomeSection() {
                   <source src="/video/video.mp4" />
                 </video>
               </div>
-              <p className="italic text-center text-white-a700 drop-shadow-md shadow-gray-200 mt-4">
+              <p className="italic text-center text-white-a700 drop-shadow-md shadow-gray-200 my-4">
                 <NumberTicker
                   className="bg-gradient-to-r from-purple-500 to-purple-800 rounded-lg px-2 py-1"
                   value={700000}
